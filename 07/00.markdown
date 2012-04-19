@@ -1,0 +1,4 @@
+Implicits
+=========
+
+In which we explore implicits...Explicitly.

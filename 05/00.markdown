@@ -1,0 +1,7 @@
+Collections
+===========
+
+In which we explore the world of Sets, Lists and Maps.
+<br/>
+<br/>
+For much more information, the [collections API docs](http://www.scala-lang.org/docu/files/collections-api/collections_0.html) are the best place to start.

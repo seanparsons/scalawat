@@ -1,0 +1,4 @@
+Scala. Wat.
+===========
+
+A presentation about Scala and the core of how to use it.

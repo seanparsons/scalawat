@@ -1,0 +1,6 @@
+What Is Scala?
+==============
+
+* Runs on the JVM and produces bytecode.
+* Scala can use Java, Java can use Scala.
+* Commercially supported and developed by [TypeSafe](http://typesafe.com/).

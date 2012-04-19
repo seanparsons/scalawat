@@ -1,0 +1,8 @@
+Code Along With Me
+==================
+
+To play with some of the snippets there are a few options:
+
+* Install the [Typesafe Stack](http://typesafe.com/stack), to run scala on the command line.
+* With [Homebrew](http://mxcl.github.com/homebrew/): brew install scala
+* If you have [SBT](https://github.com/harrah/xsbt): sbt console

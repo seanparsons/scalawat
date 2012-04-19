@@ -1,0 +1,13 @@
+Actors
+======
+
+In which we explore actors using [Akka](http://akka.io/).
+<br />
+<br />
+Note to run these examples in the REPL, you'll need to include an Akka 2.0 actor jar in the classpath and pass the "-Yrepl-sync" option to the REPL.
+<br />
+<br />
+Note that while Scala includes an actor implementation in the core library, in the future they will be replaced by Akka actors.
+<br />
+<br />
+[The Akka Documentation](http://akka.io/docs/) is much more comprehensive than this, this is more of an introduction to what can be done.

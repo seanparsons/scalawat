@@ -1,0 +1,4 @@
+Classes And Things
+==================
+
+In which we explore classes, traits and objects.

@@ -1,0 +1,4 @@
+Pattern Matching
+================
+
+In which we explore how matching patterns can make your life easy.
