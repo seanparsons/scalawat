@@ -1,0 +1,763 @@
+<!DOCTYPE html SYSTEM "about:legacy-compat">
+<html manifest="pamflet.manifest">
+      <head>
+        <title>Scala. Wat. — Combined Pages</title>
+        <link type="text/css" media="screen, projection" rel="stylesheet" href="css/blueprint/screen.css"></link>
+        <link type="text/css" media="screen and (min-device-width: 800px), projection" rel="stylesheet" href="css/blueprint/grid.css"></link>
+        <link type="text/css" media="print" rel="stylesheet" href="css/blueprint/print.css"></link> 
+        <!--[if lt IE 8]>
+          <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/>
+        <![endif]-->
+        <link type="text/css" media="screen, projection" rel="stylesheet" href="css/pamflet.css"></link>
+        <link type="text/css" media="print" rel="stylesheet" href="css/pamflet-print.css"></link>
+        <link type="text/css" media="screen and (min-device-width: 800px), projection" rel="stylesheet" href="css/pamflet-grid.css"></link>
+        
+        <script src="js/jquery-1.6.2.min.js"></script>
+        <script src="js/jquery.collapse.js"></script>
+        <script src="js/pamflet.js"></script>
+        <script type="text/javascript" src="js/prettify/prettify.js"></script><script type="text/javascript" src="js/prettify/lang-scala.js"></script><link type="text/css" rel="stylesheet" href="css/prettify.css"></link><script type="text/javascript"><!--
+        window.onload=function() { prettyPrint(); };
+      --></script>
+        <meta charset="utf-8"></meta>
+        <meta name="viewport" content="width=device-width, initial-scale=1"></meta>
+      </head>
+      <body>
+        <a class="page prev nav" href="Contents+in+Depth.html">
+            <span class="space">&nbsp;</span>
+            <span class="flip">❧</span>
+          </a>
+        <div class="container">
+          <div class="span-16 prepend-1 append-1">
+            <div class="top nav span-16 title">
+              <span>Scala. Wat.</span> — Combined Pages
+            </div>
+          </div>
+          <div class="span-16 prepend-1 append-1 contents">
+            <div class="tocwrapper show">
+      <a class="tochead nav" style="display: none" href="#toc">❦</a>
+      <a name="toc"></a>
+      <h4 class="toctitle">Contents</h4>
+      <div class="tocbody">
+      <div><a href="#Scala.+Wat.">Scala. Wat.</a></div><ol class="toc"> <li><div><a href="#What+Is+Scala%3F">What Is Scala?</a></div></li><li><div><a href="#Code+Along+With+Me">Code Along With Me</a></div></li><li><div><a href="#Values%2C+Variables+And+Functions">Values, Variables And Functions</a></div><ol class="toc"> <li><div><a href="#Values+and+variables">Values and variables</a></div></li><li><div><a href="#Functions">Functions</a></div></li><li><div><a href="#Function+Parameters">Function Parameters</a></div></li><li><div><a href="#Function+Parameters+On+Demand">Function Parameters On Demand</a></div></li><li><div><a href="#If+Statements">If Statements</a></div></li><li><div><a href="#Expressions">Expressions</a></div></li><li><div><a href="#Type+Inference">Type Inference</a></div></li> </ol></li><li><div><a href="#Classes+And+Things">Classes And Things</a></div><ol class="toc"> <li><div><a href="#Classes">Classes</a></div></li><li><div><a href="#Traits">Traits</a></div></li><li><div><a href="#Case+Classes">Case Classes</a></div></li><li><div><a href="#Using+Case+Classes">Using Case Classes</a></div></li><li><div><a href="#Objects">Objects</a></div></li><li><div><a href="#Object+Inheritance">Object Inheritance</a></div></li><li><div><a href="#Companion+Objects">Companion Objects</a></div></li><li><div><a href="#Generics">Generics</a></div></li><li><div><a href="#Generic+Constraints">Generic Constraints</a></div></li><li><div><a href="#Tuples">Tuples</a></div></li> </ol></li><li><div><a href="#Collections">Collections</a></div><ol class="toc"> <li><div><a href="#Lists">Lists</a></div></li><li><div><a href="#Sets">Sets</a></div></li><li><div><a href="#Vector">Vector</a></div></li><li><div><a href="#Maps">Maps</a></div></li><li><div><a href="#Option">Option</a></div></li><li><div><a href="#The+map+Method">The map Method</a></div></li><li><div><a href="#The+flatMap+Method">The flatMap Method</a></div></li><li><div><a href="#Why+Flatmap%3F">Why Flatmap?</a></div></li><li><div><a href="#Using+flatMap+With+Option">Using flatMap With Option</a></div></li><li><div><a href="#Fold+To+The+Left">Fold To The Left</a></div></li><li><div><a href="#Everything+Is+A+Fold">Everything Is A Fold</a></div></li><li><div><a href="#For+Loops">For Loops</a></div></li><li><div><a href="#For+Comprehensions">For Comprehensions</a></div></li><li><div><a href="#Nesting+For+Comprehensions">Nesting For Comprehensions</a></div></li><li><div><a href="#Filtering+For+Comprehensions">Filtering For Comprehensions</a></div></li><li><div><a href="#Making+For+Comprehensions">Making For Comprehensions</a></div></li><li><div><a href="#Collections+Do+Much+More">Collections Do Much More</a></div></li> </ol></li><li><div><a href="#Pattern+Matching">Pattern Matching</a></div><ol class="toc"> <li><div><a href="#Basic+Pattern+Matching">Basic Pattern Matching</a></div></li><li><div><a href="#Pattern+Matching+On+Types">Pattern Matching On Types</a></div></li><li><div><a href="#Guards%21">Guards!</a></div></li><li><div><a href="#Pattern+Matching+Fields">Pattern Matching Fields</a></div></li><li><div><a href="#Multiple+Pattern+Matches">Multiple Pattern Matches</a></div></li><li><div><a href="#Case.*">Case.*</a></div></li><li><div><a href="#Partial+Functions">Partial Functions</a></div></li><li><div><a href="#Exceptions">Exceptions</a></div></li><li><div><a href="#Implementing+Unapply">Implementing Unapply</a></div></li> </ol></li><li><div><a href="#Implicits">Implicits</a></div><ol class="toc"> <li><div><a href="#Implicit+Conversions">Implicit Conversions</a></div></li><li><div><a href="#Implicit+Parameters">Implicit Parameters</a></div></li><li><div><a href="#Why+Typeclasses%3F">Why Typeclasses?</a></div></li><li><div><a href="#Make+Me+A+Typeclass">Make Me A Typeclass</a></div></li><li><div><a href="#Typeclasses+Are+Complex">Typeclasses Are Complex</a></div></li><li><div><a href="#That+Typeclass+Is+Just+Adding">That Typeclass Is Just Adding</a></div></li> </ol></li><li><div><a href="#Other+Things+You+May+See">Other Things You May See</a></div><ol class="toc"> <li><div><a href="#Nothing">Nothing</a></div></li><li><div><a href="#Underscores">Underscores</a></div></li><li><div><a href="#Currying+And+Partial+Application">Currying And Partial Application</a></div></li><li><div><a href="#Either">Either</a></div></li><li><div><a href="#Java+Interop">Java Interop</a></div></li> </ol></li><li><div><a href="#Actors">Actors</a></div><ol class="toc"> <li><div><a href="#What%E2%80%99s+an+actor%3F">What’s an actor?</a></div></li><li><div><a href="#What+If+I+Want+A+Result%3F">What If I Want A Result?</a></div></li><li><div><a href="#Don%E2%80%99t+Block%21">Don’t Block!</a></div></li><li><div><a href="#Where+Would+I+Use+Actors%3F">Where Would I Use Actors?</a></div></li> </ol></li><li><div><a href="#SBT">SBT</a></div><ol class="toc"> <li><div><a href="#Getting+SBT+Installed">Getting SBT Installed</a></div></li><li><div><a href="#SBT+Basics">SBT Basics</a></div></li> </ol></li> </ol></div></div><h1 id="Scala.+Wat.">Scala. Wat.</h1><p>A presentation about Scala and the core of how to use it.</p><h1 id="What+Is+Scala%3F">What Is Scala?</h1><ul><li>Runs on the JVM and produces bytecode.
+</li><li>Scala can use Java, Java can use Scala.
+</li><li>Commercially supported and developed by <a  href="http://typesafe.com/">TypeSafe</a>.</li></ul><h1 id="Code+Along+With+Me">Code Along With Me</h1><p>To play with some of the snippets there are a few options:
+</p><ul><li>Install the <a  href="http://typesafe.com/stack">Typesafe Stack</a>, to run scala on the command line.
+</li><li>With <a  href="http://mxcl.github.com/homebrew/">Homebrew</a>: brew install scala
+</li><li>If you have <a  href="https://github.com/harrah/xsbt">SBT</a>: sbt console</li></ul><h1 id="Values%2C+Variables+And+Functions">Values, Variables And Functions</h1><p>In which we explore values, variables and functions.</p><h1 id="Values+and+variables">Values and variables</h1><p>A value is a field that can’t be updated after assignment.
+</p><pre><code class="prettyprint lang-scala">val foo: Int = 2
+// foo = 3 wouldn't compile.
+</code></pre><p>A variable is a field that can be updated after assignment.
+</p><pre><code class="prettyprint lang-scala">var foo: Int = 2
+foo = 3
+</code></pre><p>Also these can be made lazy.
+</p><pre><code class="prettyprint lang-scala">lazy val foo: Int = 10 // Imagine this took a minute to calculate.
+</code></pre><h1 id="Functions">Functions</h1><p>We can define a function using the def keyword.
+</p><pre><code class="prettyprint lang-scala">def square(number: Int): Int = {
+  number * number
+}
+</code></pre><p>Note that we don’t need to use the return keyword, the last expression is taken as the result of the method.
+<br/>
+<br/>
+As functions are first class elements in Scala, they can be assigned to a field or passed into other methods.
+</p><pre><code class="prettyprint lang-scala">val squareFunction: (Int) =&gt; Int = square
+// Alternatively:
+// val squareFunction = (number: Int) =&gt; number * number
+</code></pre><h1 id="Function+Parameters">Function Parameters</h1><p>Multiple parameters as well as varargs are supported.
+</p><pre><code class="prettyprint lang-scala">def printAtLeastOneKitteh(firstKitteh: String, kittehs: String*) {
+  println(firstKitteh)
+  println(kittehs)
+}
+printAtLeastOneKitteh(&quot;Spot&quot;, &quot;Rover&quot;, &quot;Jeff&quot;)
+</code></pre><p>Also it’s possible to use multiple parameter groups.
+</p><pre><code class="prettyprint lang-scala">def printKittehs(firstKitteh: String)(otherKittehs: String*) {
+  println(firstKitteh)
+  println(otherKittehs)
+}
+printKittehs(&quot;Spot&quot;)(&quot;Rover&quot;, &quot;Jeff&quot;)
+</code></pre><p>Methods that have no parameters to them (like one form of println) can have the parenthesis omitted.
+</p><h1 id="Function+Parameters+On+Demand">Function Parameters On Demand</h1><pre><code class="prettyprint lang-scala">def printLater(was: Long, now: =&gt; Long): Unit = {
+  Thread.sleep(100)
+  println(&quot;Was: &quot; + was + &quot; Now: &quot; + now)
+}
+
+printLater(System.currentTimeMillis, System.currentTimeMillis)
+</code></pre><p>The now expression is executed at the point when it’s used inside the method, not when it’s passed into the method.
+<br/>
+<br/>
+Note that the “now” parameter is effectively a function that lacks parameters and parenthesis.
+</p><h1 id="If+Statements">If Statements</h1><p>If statements function slightly differently to languages like Java, think of them more like a method themselves as they return a value.
+</p><pre><code class="prettyprint lang-java">// Java.
+String someValue = null;
+if (1 == 1) {
+  someValue = &quot;1 is definitely 1.&quot;;
+} else {
+  someValue = &quot;Maths is broken, the end is nigh.&quot;;
+}
+</code></pre><pre><code class="prettyprint lang-scala">// Scala.
+val someValue: String = if (1 == 1) {
+  &quot;1 is definitely 1.&quot;
+} else {
+  &quot;Maths is broken, the end is nigh.&quot;
+}
+</code></pre><h1 id="Expressions">Expressions</h1><p>Scala is quite flexible in its use of expressions.
+</p><pre><code class="prettyprint lang-scala">val someOfTheText = {
+  val text = &quot;Some really long text...&quot;
+  new String(text.substring(5, 12))
+}
+println(someOfTheText)
+println{
+  someOfTheText
+}
+</code></pre><p>Even the contents of a function are an expression:
+</p><pre><code class="prettyprint lang-scala">def square(number: Int): Int = (number * number)
+</code></pre><h1 id="Type+Inference">Type Inference</h1><p>Scala supports type inference on fields:
+</p><pre><code class="prettyprint lang-scala">val number = 1
+println(number.getClass)
+</code></pre><p>It also supports type inference for method return types:
+</p><pre><code class="prettyprint lang-scala">def getRandomNumber() = 4
+var number = getRandomNumber()
+// This would not compile, as the type of number is Int.
+// number = &quot;Test&quot;
+</code></pre><h1 id="Classes+And+Things">Classes And Things</h1><p>In which we explore classes, traits and objects.</p><h1 id="Classes">Classes</h1><p>Much like other languages a class tends to encapsulate some data and expose some methods for interacting with it.
+</p><pre><code class="prettyprint lang-scala">class Monkey(var x: Int, var y: Int) {
+  def this() = this(0, 0)        // Overloaded constructor.
+  println(&quot;Creating a monkey!&quot;)  // Wut?
+  def move(xMovement: Int, yMovement: Int): Unit = {
+    x += xMovement
+    y += yMovement
+  }
+}
+</code></pre><h1 id="Traits">Traits</h1><p>Traits are much like interfaces in Java and many other languages, with the exception that they can also include code and not just definitions.
+</p><pre><code class="prettyprint lang-scala">trait Logging {
+  def log(logLevel: String, message: String): Unit
+  def info(message: String) {
+    log(&quot;INFO&quot;, message)
+  }
+}
+
+class Monkey extends Logging {
+  def log(logLevel: String, message: String) {
+    println(logLevel + &quot;: &quot; + message)
+  }
+  def throwBanana() {
+    // Something else happens.
+    info(&quot;Banana thrown.&quot;)
+  }
+}
+val monkey = new Monkey()
+monkey.throwBanana()
+</code></pre><h1 id="Case+Classes">Case Classes</h1><p>The case keyword provides a whole load of awesome.
+</p><pre><code class="prettyprint lang-scala">case class Monkey(x: Int, y: Int)
+</code></pre><p>From this we get:
+</p><ul><li>Fields that default to being immutable (can prefix with var)
+</li><li>equals, hashCode, toString implementations.
+</li><li>A copy method for conveniently creating new instances.
+</li><li>The class implements Serializable.
+</li><li>And more…
+</li></ul><h1 id="Using+Case+Classes">Using Case Classes</h1><p>Lets have a look at some of that.
+</p><pre><code class="prettyprint lang-scala">val monkey1 = new Monkey(0, 0)
+val movedMonkey1 = monkey1.copy(x = 10)
+println(monkey1)
+println(monkey1 == movedMonkey1)
+</code></pre><p>Note that we used ”==” rather than equals, the method ”==” is a null safe alias of equals(…) from Java. To check for reference equality, use the eq method.</p><h1 id="Objects">Objects</h1><p>Scala has singletons built into the language.
+</p><pre><code class="prettyprint lang-scala">object CakeConcatenator {
+  val cake = &quot;CAKE!!&quot;
+  def concatenate(text: String): String = text + cake
+}
+
+println(CakeConcatenator.cake)
+println(CakeConcatenator.concatenate(&quot;I must have &quot;))
+</code></pre><p>Not possible to “new” up an object.</p><h1 id="Object+Inheritance">Object Inheritance</h1><p>Objects can extend classes and/or traits.
+</p><pre><code class="prettyprint lang-scala">trait Concatenator {
+  def concatenate(text: String): String
+}
+
+object CakeConcatenator extends Concatenator {
+  val cake = &quot;CAKE!!&quot;
+  def concatenate(text: String): String = text + cake
+}
+</code></pre><h1 id="Companion+Objects">Companion Objects</h1><p>Scala allows a class and an object with the same name to co-exist.
+</p><pre><code class="prettyprint lang-scala">class Cake(name: String)
+object Cake {
+  def apply(name: String) = new Cake(name)
+}
+val cake = Cake(&quot;Chocolate&quot;)
+</code></pre><p>Case classes do this too:
+</p><pre><code class="prettyprint lang-scala">case class Cake(name: String)
+val cake = Cake(&quot;Chocolate&quot;)
+</code></pre><h1 id="Generics">Generics</h1><p>Scala supports generics almost identically to Java.
+</p><pre><code class="prettyprint lang-scala">trait Serializer[T] { 
+  def serialize(target: T): Array[Byte]
+}
+
+object StringSerializer extends Serializer[String] {
+  def serialize(target: String) = target.getBytes
+}
+
+println(StringSerializer.serialize(&quot;CAKE!&quot;))
+
+</code></pre><p>Methods can also be generified (note this may not be a real word).</p><h1 id="Generic+Constraints">Generic Constraints</h1><p>Generic types can be constrained, the real term for this is type bounds.
+</p><pre><code class="prettyprint lang-scala">import java.io._
+
+trait Serializer[T &lt;: Serializable] { 
+  def serialize(target: T): Array[Byte] = {
+    // Stock Java &quot;Serializable&quot; style serialization.
+    val byteArrayOutputStream = new ByteArrayOutputStream()
+    val objectOutputStream = new ObjectOutputStream(byteArrayOutputStream)
+    objectOutputStream.writeObject(target)
+    val bytes = byteArrayOutputStream.toByteArray()
+    objectOutputStream.close()
+    bytes
+  }
+}
+
+object StringSerializer extends Serializer[String]
+
+println(StringSerializer.serialize(&quot;CAKE!&quot;))
+
+</code></pre><h1 id="Tuples">Tuples</h1><p>Scala has a series of tuples that are somewhat like nameless classes.
+</p><pre><code class="prettyprint lang-scala">val tuple2 = new Tuple2(&quot;Another Test&quot;, 4)
+println(tuple2)
+println(tuple2._2)
+val tuple3 = (1, &quot;Test&quot;, 2.7)
+println(tuple3)
+println(tuple3._3)
+</code></pre><p>Since creating a case class is so simple (and worry free), lean towards creating those for method parameters and return types.</p><h1 id="Collections">Collections</h1><p>In which we explore the world of Sets, Lists and Maps.
+<br/>
+<br/>
+For much more information, the <a  href="http://www.scala-lang.org/docu/files/collections-api/collections_0.html">collections API docs</a> are the best place to start.</p><h1 id="Lists">Lists</h1><p>A List is a series of items sequentially stored.
+</p><pre><code class="prettyprint lang-scala">val list = List(5, 6, 1)
+println(list)
+println(list.head)
+println(list.tail)
+</code></pre><p>The stock List implementation is a cons-list: 
+<img alt="Cons list"  src="http://i.imgur.com/v2CZj.png"></img>
+Each part of the list consists of an element and another list.
+</p><pre><code class="prettyprint lang-scala">// Alternatively:
+val list = 5 :: 6 :: 1 :: Nil
+</code></pre><h1 id="Sets">Sets</h1><p>A Set is a collection of elements with no duplicates, ordering cannot be guaranteed.
+</p><pre><code class="prettyprint lang-scala">val set = Set(1, 2, 7, 1) 
+println(set)
+println(set.head)
+println(set.tail)
+println(set + 25) // Creates new instance.
+</code></pre><h1 id="Vector">Vector</h1><p>A more general sequential type is Vector, which provides amortised constant time operations for prepending and appending amongst other things.
+</p><pre><code class="prettyprint lang-scala">val vector = Vector(1, 9, 22, 19, -5, 10)
+println(vector :+ 3)
+println(7 +: vector)
+println(vector.patch(3, Vector(1, 2, 3, 4), 0))
+</code></pre><p>Note that pretty much all the methods seen on Set/List/Vector are inherited from <a  href="http://www.scala-lang.org/api/current/scala/collection/Seq.html">Seq</a>(there’s a lot more too), so all of them will work in the same way. 
+</p><h1 id="Maps">Maps</h1><p>A Map is otherwise known as an associative array or dictionary. It just stores values against keys, with the keys being unique.
+</p><pre><code class="prettyprint lang-scala">val map = Map(1 -&gt; &quot;Sean&quot;, 2 -&gt; &quot;Cat&quot;)
+println(map)
+println(map(1))              // apply method.
+println(map(2))
+println(map + (3 -&gt; &quot;Greg&quot;)) // Creates new instance.
+println(map.tail)            // Wait, what?
+</code></pre><h1 id="Option">Option</h1><p>An Option contains either zero or 1 items, represented by the None and Some types respectively.
+</p><pre><code class="prettyprint lang-scala">val potentialValue1: Option[String] = None
+val potentialValue2: Option[String] = Some(&quot;Potential!&quot;)
+println(potentialValue1)
+println(potentialValue2)
+println(potentialValue1.getOrElse(&quot;No Potential!&quot;))
+println(potentialValue2.getOrElse(&quot;No Potential!&quot;))
+</code></pre><pre><code class="prettyprint lang-scala">def lookupUser(id: Int): Option[String] = {
+  if (id == 1) Some(&quot;Sean&quot;) else None
+}
+</code></pre><h1 id="The+map+Method">The map Method</h1><p>All of the collections (including Option and even Map) we’ve seen so far support the map method.
+</p><pre><code class="prettyprint lang-scala">def timesTwo(number: Int): Int = number * 2
+
+val list = List(10, 20, 30)
+println(list.map(timesTwo))
+// List(20, 40, 60)
+
+val set = Set(9, 10, 23)
+println(set.map(timesTwo))
+// Set(18, 20, 46)
+
+val some = Some(99)
+val none = None
+println(some.map(timesTwo))
+// Some(198)
+println(none.map(timesTwo))
+// None
+</code></pre><h1 id="The+flatMap+Method">The flatMap Method</h1><p>Works very similar to map, but is way more useful.
+</p><pre><code class="prettyprint lang-scala">def lookupScores(playerID: Int): List[Int] = {
+  List(playerID, playerID * 2, playerID * 3)
+}
+
+println(List(1, 2, 3).map(lookupScores))
+// List(List(1, 2, 3), List(2, 4, 6), List(3, 6, 9))
+println(List(1, 2, 3).flatMap(lookupScores))
+// List(1, 2, 3, 2, 4, 6, 3, 6, 9)
+</code></pre><h1 id="Why+Flatmap%3F">Why Flatmap?</h1><p>Hands up if you’ve written a piece of code like this?
+</p><pre><code class="prettyprint lang-java">Player player = lookupPlayer(1);
+if (player != null) {
+  Integer score = lookupScore(player);
+  if (score != null) {
+    return &quot;Score is: &quot; + score;
+  }
+}
+return null;
+</code></pre><p>Lots of boilerplate, easy to get a condition wrong, have to explicitly return (in this case the code is Java).
+</p><h1 id="Using+flatMap+With+Option">Using flatMap With Option</h1><p>Option and the flatMap method go together really well if we adapt the prior example to use Option in Scala.
+</p><pre><code class="prettyprint lang-scala">case class Player(name: String)
+def lookupPlayer(id: Int): Option[Player] = {
+  if (id == 1) Some(new Player(&quot;Sean&quot;))
+  else if(id == 2) Some(new Player(&quot;Greg&quot;))
+  else None
+}
+def lookupScore(player: Player): Option[Int] = {
+  if (player.name == &quot;Sean&quot;) Some(1000000) else None
+}
+
+println(lookupPlayer(1).map(lookupScore))  // Some(Some(1000000))
+println(lookupPlayer(2).map(lookupScore))  // Some(None)
+println(lookupPlayer(3).map(lookupScore))  // None
+
+println(lookupPlayer(1).flatMap(lookupScore))  // Some(1000000)
+println(lookupPlayer(2).flatMap(lookupScore))  // None
+println(lookupPlayer(3).flatMap(lookupScore))  // None
+</code></pre><h1 id="Fold+To+The+Left">Fold To The Left</h1><p>The foldLeft method takes an initial value and “folds” over the collection using a function. Summing up a collection is the prime example.
+</p><pre><code class="prettyprint lang-java">// Java
+Integer[] scores = new Integer[]{200, 300, 600};
+int total = 0;
+for (Integer score : scores) {
+  total += score;
+}
+return total;
+</code></pre><pre><code class="prettyprint lang-scala">// Scala
+val scores = List(100, 200, 300)
+scores.foldLeft(0)((runningScore, score) =&gt; runningScore + score)
+// For those comfortable with the syntax:
+scores.foldLeft(0)(_ + _)
+</code></pre><h1 id="Everything+Is+A+Fold">Everything Is A Fold</h1><p>Methods like map can (and probably are) implemented in terms of a fold.
+</p><pre><code class="prettyprint lang-scala">def mapList[T, U](values: List[T], function: T =&gt; U): List[U] = {
+  values.foldRight(Nil: List[U]){(value: T, workingList: List[U]) =&gt;
+    function(value) :: workingList
+  }
+}
+println(mapList(List(1, 2, 3), 
+                (number: Int) =&gt; number.toString + &quot; cakes!&quot;))
+// List(1 cakes!, 2 cakes!, 3 cakes!)
+</code></pre><h1 id="For+Loops">For Loops</h1><pre><code class="prettyprint lang-java">// Java
+for (int count = 0; count &lt; 4; count++) {
+  System.out.println(count);
+}
+</code></pre><pre><code class="prettyprint lang-scala">// Scala
+for(count &lt;- 0 until 4) {
+  println(count)
+}
+// Also:
+for(count &lt;- List(0, 1, 2, 3)) {
+  println(count)
+}
+</code></pre><h1 id="For+Comprehensions">For Comprehensions</h1><p>Instead of side effecting like a for loop, a for comprehension returns a value.
+</p><pre><code class="prettyprint lang-scala">val results = for {
+  number &lt;- List(10, 20, 30)
+} yield number * 2
+println(results)
+</code></pre><h1 id="Nesting+For+Comprehensions">Nesting For Comprehensions</h1><pre><code class="prettyprint lang-scala">case class Player(name: String)
+def lookupPlayer(id: Int): Option[Player] = {
+  if (id == 1) Some(new Player(&quot;Sean&quot;)) else None
+}
+def lookupScore(player: Player): Option[Int] = {
+  if (player.name == &quot;Sean&quot;) Some(1000000) else None
+}
+val scoreText = for {
+  player &lt;- lookupPlayer(1)
+  score &lt;- lookupScore(player)
+} yield &quot;%s scored %s.&quot;.format(player.name, score)
+println(scoreText)
+</code></pre><h1 id="Filtering+For+Comprehensions">Filtering For Comprehensions</h1><p>It’s also possible to filter those collections, so to expand on the previous example.
+</p><pre><code class="prettyprint lang-scala">case class Player(name: String, deleted: Boolean)
+def lookupPlayer(id: Int): Option[Player] = {
+  if (id == 1) Some(new Player(&quot;Sean&quot;, true)) else None
+}
+def lookupScore(player: Player): Option[Int] = {
+  if (player.name == &quot;Sean&quot;) Some(1000000) else None
+}
+val scoreText = for {
+  player &lt;- lookupPlayer(1) if !player.deleted
+  score &lt;- lookupScore(player)
+} yield &quot;%s scored %s.&quot;.format(player.name, score)
+println(scoreText)
+</code></pre><h1 id="Making+For+Comprehensions">Making For Comprehensions</h1><p>For comprehensions work by convention, there’s no requirement for them to be a collection.
+</p><ul><li>A single layer of nesting requires map to be implemented
+</li><li>Multiple layers of nesting, requires map and flatMap to be implemented.
+</li><li>If you want to filter items, implement filter.
+</li><li>To just loop over elements, implement foreach.</li></ul><h1 id="Collections+Do+Much+More">Collections Do Much More</h1><p><a  href="http://www.scala-lang.org/api/current/scala/collection/Seq.html">Seq</a> is the prime trait for any of the sequential collections (even Map which is why previously there was a map.tail method call).
+</p><pre><code class="prettyprint lang-scala">val seq = Seq(-10, -5, 0, 1, 2, 3, 9999)
+println(seq.collect{
+  case number if number % 2 == 0 =&gt; &quot;Even: &quot; + number
+})
+println(seq.take(4))
+println(seq.drop(4))
+println(seq.forall(number =&gt; number % 3 == 0))
+println(seq.groupBy(number =&gt; number % 3))
+println(seq.max)
+println(seq.permutations.toSet)
+println(seq.combinations(3).toSet)
+println(seq.map(number =&gt; (number % 3, number)).toMap)
+println(seq.zip(seq))
+</code></pre><h1 id="Pattern+Matching">Pattern Matching</h1><p>In which we explore how matching patterns can make your life easy.</p><h1 id="Basic+Pattern+Matching">Basic Pattern Matching</h1><p>Switch/Case statements are available in a lot of languages, with Scala being no exception.
+</p><pre><code class="prettyprint lang-scala">def getPlayerName(id: Int): String = {
+  id match {
+    case 1 =&gt; &quot;Sean&quot;
+    case 2 =&gt; &quot;Greg&quot;
+    case _ =&gt; &quot;Unknown&quot;
+  }
+}
+
+println(getPlayerName(1))
+println(getPlayerName(2))
+println(getPlayerName(99))
+</code></pre><p>Similar to the if statement, the match expression and the cases return a value, so there’s no need for “break;” statements or any such nonsense.</p><h1 id="Pattern+Matching+On+Types">Pattern Matching On Types</h1><p>One step beyond(<a  href="http://www.youtube.com/watch?v=N-uyWAe0NhQ">!</a>) that is matching on types.
+</p><pre><code class="prettyprint lang-scala">def whatIsThis(value: Any): String = {
+  value match {
+    case int: Int =&gt; &quot;It's an Int.&quot;
+    case text: String =&gt; &quot;It's a String: &quot; + text
+    case _ =&gt; &quot;I don't know what it is.&quot;
+  }
+}
+
+println(whatIsThis(&quot;Moshi&quot;))
+println(whatIsThis(1))
+println(whatIsThis(1.2))
+</code></pre><h1 id="Guards%21">Guards!</h1><p>Each case can also be given a guard, which is a further condition that it must satisfy for it to match.
+</p><pre><code class="prettyprint lang-scala">def parseNumberSafely(id: Int): String = {
+  id match {
+    case positiveNumber if positiveNumber &gt; 0 =&gt; {
+      &quot;This is a positive number of: &quot; + positiveNumber
+    }
+    case negative =&gt; { 
+      &quot;This is not a positive number: &quot; + negative
+    }
+  }
+}
+
+println(parseNumberSafely(1))
+println(parseNumberSafely(1000))
+println(parseNumberSafely(-200))
+println(parseNumberSafely(0))
+</code></pre><p>As the compiler knows the type of “id” it’s not necessary to specify it in the case expressions.</p><h1 id="Pattern+Matching+Fields">Pattern Matching Fields</h1><p>It may be necessary to pattern match on a field, potentially one passed into a method.
+</p><pre><code class="prettyprint lang-scala">def valueMatchesText(value: Any, expected: String): String = {
+  value match {
+    case `expected` =&gt; &quot;It worked!&quot;
+    case _ =&gt; &quot;It's all gone wrong.&quot;
+  }
+}
+println(valueMatchesText(&quot;One&quot;, &quot;One&quot;))
+println(valueMatchesText(1, &quot;One&quot;))
+</code></pre><h1 id="Multiple+Pattern+Matches">Multiple Pattern Matches</h1><p>It’s possible to match multiple things in each case statement:
+</p><pre><code class="prettyprint lang-scala">def isFourOrFive(value: Any): String = {
+  value match {
+    case 4 | 5 =&gt; &quot;Is Four Or Five!&quot;
+    case _ =&gt; &quot;No Idea!&quot;
+  }
+}
+println(isFourOrFive(4))
+println(isFourOrFive(5))
+println(isFourOrFive(&quot;Something Else&quot;))
+</code></pre><h1 id="Case.*">Case.*</h1><pre><code class="prettyprint lang-scala">case class Player(name: String)
+sealed abstract class Act
+case class ShotFired(player: Player, x: Int, y: Int) extends Act
+case class MedikitUsed(player: Player, percentUsage: Int) extends Act
+
+def describeAction(action: Act): String = {
+  action match {
+    case ShotFired(Player(player), x, y) =&gt; {
+      &quot;%s fired a gun at (%s,%s)&quot;.format(player, x, y)
+    }
+    case MedikitUsed(Player(player), useAmount) =&gt; { 
+      &quot;%s used %s%% of a medikit&quot;.format(player, useAmount)
+    }
+  }
+}
+println(describeAction(ShotFired(Player(&quot;Sean&quot;), 100, 150)))
+println(describeAction(MedikitUsed(Player(&quot;Sean&quot;), 10)))
+</code></pre><h1 id="Partial+Functions">Partial Functions</h1><p>Each case statement is an instance of <a  href="http://www.scala-lang.org/api/current/scala/PartialFunction.html">PartialFunction</a>.
+</p><pre><code class="prettyprint lang-scala">val maybeSeven: PartialFunction[Any, String] = {
+  case 7 =&gt; &quot;It's Seven!&quot;
+}
+
+println(maybeSeven(1)) // Throws exception.
+println(maybeSeven(7))
+println(maybeSeven.isDefinedAt(1))
+println(maybeSeven.isDefinedAt(7))
+</code></pre><h1 id="Exceptions">Exceptions</h1><p>Exceptions in Scala function in much the same way as they do in Java.
+</p><pre><code class="prettyprint lang-scala">def parseInt(text: String): Option[Int] = {
+  try {
+    Some(text.toInt)
+  } catch {
+    case npe: NullPointerException =&gt; None
+    case nfe: NumberFormatException =&gt; None
+  } finally {
+    // Do nothing.
+  }
+}
+println(parseInt(&quot;1&quot;))
+println(parseInt(&quot;Test&quot;))
+println(parseInt(null))
+</code></pre><p>Note that we pattern match on the type of the exception itself, so if the exception is a case class, we can extract values from it and use guards.</p><h1 id="Implementing+Unapply">Implementing Unapply</h1><p>The unapply method is the crux of pattern matching, it’s automatically created for case classes, but it’s easy to make one yourself.
+</p><pre><code class="prettyprint lang-scala">case class WebRequest(url: String, get: Boolean, params: Map[String, String])
+case object GET {
+  def unapply(webRequest: WebRequest): Option[String] = {
+    if (webRequest.get) Option(webRequest.url) else None
+  }
+}
+
+def parseGetRequest(webRequest: WebRequest): String = webRequest match {
+  case GET(url) =&gt; &quot;GET request for %s.&quot;.format(url)
+  case _ =&gt; &quot;Unknown&quot;
+}
+println(parseGetRequest(WebRequest(&quot;/test&quot;, true, Map())))
+// GET request for /test.
+</code></pre><h1 id="Implicits">Implicits</h1><p>In which we explore implicits…Explicitly.</p><h1 id="Implicit+Conversions">Implicit Conversions</h1><p>Implicit conversions allow you to specify one type but pass a different one.
+</p><pre><code class="prettyprint lang-scala">case class Player(name: String)
+case class NamedEntity(name: String)
+implicit def playerToNamedEntity(player: Player): NamedEntity = {
+  new NamedEntity(player.name)
+}
+def printName(namedEntity: NamedEntity) {
+  println(&quot;Name: &quot; + namedEntity.name)
+} 
+printName(new Player(&quot;Sean&quot;))
+</code></pre><h1 id="Implicit+Parameters">Implicit Parameters</h1><p>Parameter groups can be marked as implicit so that implicit fields can be passed in automatically by the compiler.
+</p><pre><code class="prettyprint lang-scala">trait Serializer[T] { 
+  def serialize(target: T): Array[Byte]
+}
+def store[T](target: T)(implicit serializer: Serializer[T]) {
+  val bytes = serializer.serialize(target)
+  println(bytes.size) // Not a real implementation.
+}
+implicit val stringSerializer = new Serializer[String] {
+  def serialize(target: String) = target.getBytes
+}
+store(&quot;Test text.&quot;)
+// Will not compile:
+// store(1)
+// Can also do:
+store(&quot;Test text.&quot;)(stringSerializer)
+</code></pre><h1 id="Why+Typeclasses%3F">Why Typeclasses?</h1><p>One example is that of checking for equality, there’s no point checking if an Int and a String are equal as they always will be. In the case of this Java example this also means there’s a load of boilerplate around casting the type.
+</p><pre><code class="prettyprint lang-java">class Score {
+  public int offline = 0;
+  public int online = 0;
+
+  // Sad compiler is sad.
+  public equals(Object other) {
+    if (other == null) return false;
+    if (other instanceof Score) {
+      Score otherScore = (Score)other;
+      return offline == otherScore.offline 
+        &amp;&amp; online == otherScore.online;
+    }
+    return false;
+  }
+}
+
+Score score = new Score();
+score.offline = 200;
+System.out.println(score.equals(&quot;Elephant&quot;)); // Always false.
+</code></pre><h1 id="Make+Me+A+Typeclass">Make Me A Typeclass</h1><pre><code class="prettyprint lang-scala">case class Score(offline: Int, online: Int)
+trait Equal[T] {
+  def equalByType(first: T, second: T): Boolean
+}
+case class MaybeEqual[T](value: T) {
+  def equalByType(other: T)(implicit equal: Equal[T]) = {
+    equal.equalByType(value, other)
+  }
+}
+implicit val scoreEqual = new Equal[Score] {
+  def equalByType(first: Score, second: Score): Boolean = {
+    first == second
+  }
+}
+implicit def scoreMaybeEqual(score: Score) = MaybeEqual(score)
+
+println(new Score(100, 200) equalByType new Score(100, 200))
+println(new Score(100, 200) equalByType new Score(100, 999999))
+// println(new Score(100, 200) equalByType 200)
+</code></pre><h1 id="Typeclasses+Are+Complex">Typeclasses Are Complex</h1><p>Use <a  href="http://code.google.com/p/scalaz/">Scalaz</a> you’ll be much happier for it, it has Equal, Show and loads of others relating to some more fundamental features you’re used to.
+</p><pre><code class="prettyprint lang-scala">// Semigroup
+println(1 |+| 2)                                 // 3
+println(List(1, 200) |+| List(2, 200))           // List(1, 200, 2, 200)
+println(Set(1, 200) |+| Set(2, 200))             // Set(1, 200, 2)
+println(Option(2) |+| Option(8))                 // Some(10)
+println(2.some |+| 8.some)                       // Some(10)
+println(multiplication(2) |+| multiplication(8)) // 16
+
+case class Score(offline: Int, online: Int)
+implicit val scoreSemigroup: Semigroup[Score] = 
+  semigroup{(s1, s2) =&gt; 
+    Score(s1.offline |+| s2.offline, s1.online |+| s2.online)
+  }
+println(Score(20, 200) |+| Score(100, 7))        // Score(120,207)
+</code></pre><h1 id="That+Typeclass+Is+Just+Adding">That Typeclass Is Just Adding</h1><p>Now you might look at those previous examples and thought “The methods :::, ++, + and flatMap do that too.”
+<br />
+<br />
+Lets take the example of a game with an inventory system, there are a bunch of item IDs and counts for each of those stored in a Map.
+</p><pre><code class="prettyprint lang-scala">val currentInventory = Map(1 -&gt; 2, 8 -&gt; 9, 65 -&gt; 3, 100 -&gt; 1)
+val updatedInventory = currentInventory |+| Map(1 -&gt; 4, 9 -&gt; 3)
+println(updatedInventory)  
+// Map(1 -&gt; 6, 65 -&gt; 3, 9 -&gt; 3, 8 -&gt; 9, 100 -&gt; 1)
+</code></pre><h1 id="Other+Things+You+May+See">Other Things You May See</h1><p>In which we explore…Other Things.</p><h1 id="Nothing">Nothing</h1><p>Nothing is a bottom type, which means it extends every type, but doesn’t allow you to create an instance of that type (because that would be a nonsense class).
+<br/>
+<br/>
+The definitions of Some and None might help to clear this up:
+</p><pre><code class="prettyprint lang-scala">final case class Some[+A](x: A) extends Option[A] {...}
+
+case object None extends Option[Nothing] {...}
+</code></pre><p>As None extends Option[Nothing] it can be used in place of an Option regardless of the type.</p><h1 id="Underscores">Underscores</h1><p>An underscore in scala is used in multiple places, usually to specify the default of something or that the value should be ignored.
+</p><pre><code class="prettyprint lang-scala">// Wildcard import.
+import java.io._
+// Default value for a given type.
+val number: Int = _
+// Function currying.
+def multiplier(i: Int)(factor: Int) = i * factor
+val byFive = multiplier(5)_
+println(byFive(20))
+// Default type.
+val list: List[_] = List(1, 2, 3)
+// Function parameters.
+println(List(1, 2, 3).foldLeft(10)(_ + _))
+// Default case parameter:
+// case _ =&gt; &quot;Default&quot;
+// Collection expansion to varargs:
+def printValues(values: Any*) = values.foreach(println)
+printValues(List(1, 2, 3): _*)
+</code></pre><h1 id="Currying+And+Partial+Application">Currying And Partial Application</h1><p>Currying is the process of taking a method with N parameters and turning it into one with N parameter groups. 
+</p><pre><code class="prettyprint lang-scala">val addValues = (first: Int, second: Int) =&gt; first + second
+val curriedAddValues = addValues.curried
+
+println(addValues(1, 2))
+println(curriedAddValues(1)(2))
+
+val addFour = curriedAddValues(4)
+println(addFour(9))
+
+// Also:
+val otherAddFour = addValues(_: Int, 4)
+println(otherAddFour(23))
+</code></pre><h1 id="Either">Either</h1><p><a  href="http://www.scala-lang.org/api/current/scala/Either.html">Either</a> is a type somewhat like Option, except that instead of one value or no value, it holds one value or another value of potentially differing types.
+</p><pre><code class="prettyprint lang-scala">val left: Either[String, Int] = Left(&quot;There was an error.&quot;)
+val right: Either[String, Int] = Right(9)
+println(left)
+println(right)
+</code></pre><p>This is useful for encoding a success (by convention a Right) or a failure (Left), being that they are case classes it’s possible to pattern match on them.
+</p><pre><code class="prettyprint lang-scala">case class Player(name: String)
+def lookupUser(playerID: Int): Either[String, Player] = {
+  if (playerID == 1) {
+    Right(Player(&quot;Sean&quot;))
+  } else {
+    Left(&quot;Player %s could not be found.&quot;.format(playerID))
+  }
+}
+println(lookupUser(1))
+println(lookupUser(2))
+</code></pre><h1 id="Java+Interop">Java Interop</h1><p>Scala works pretty much interoperably with Java, there are just a couple of things to be careful of.
+<br/>
+<br/>
+Using Java libraries/code in Scala should be pretty much seamless, the only thing that will become a necessity will be the use of the <a  href="http://www.scala-lang.org/api/current/scala/collection/JavaConverters$.html">JavaConverters</a> object.
+<br/>
+<br/>
+Using Scala libraries/code from Java will potentially necessitate avoiding features of Scala that don’t map well to Java, implicit and multiple parameter groups as well as functions will be awkward at best. In this case it would be advised to create additional methods using Scala to shield off these difficulties and provide interfaces that are more Java like.
+</p><h1 id="Actors">Actors</h1><p>In which we explore actors using <a  href="http://akka.io/">Akka</a>.
+<br />
+<br />
+Note to run these examples in the REPL, you’ll need to include an Akka 2.0 actor jar in the classpath and pass the ”-Yrepl-sync” option to the REPL.
+<br />
+<br />
+Note that while Scala includes an actor implementation in the core library, in the future they will be replaced by Akka actors.
+<br />
+<br />
+<a  href="http://akka.io/docs/">The Akka Documentation</a> is much more comprehensive than this, this is more of an introduction to what can be done.
+</p><h1 id="What%E2%80%99s+an+actor%3F">What’s an actor?</h1><pre><code class="prettyprint lang-scala">import akka.actor._
+
+val actorSystem = ActorSystem(&quot;actorSystem&quot;)
+case class TestActor() extends Actor {
+  def receive = {
+    case &quot;Kitteh&quot; =&gt; println(&quot;Kitteh received, over and out.&quot;)
+    case _ =&gt; println(&quot;Unknown received.&quot;)
+  }
+}
+
+val actorRef = actorSystem.actorOf(Props[TestActor], 
+  name = &quot;testActor&quot;)
+actorRef.tell(&quot;Kitteh&quot;)
+actorRef ! &quot;Dog&quot;
+actorSystem.shutdown()
+</code></pre><p>Instances of actors are independent, only process one message at a time and queue said messages in a mailbox.
+</p><h1 id="What+If+I+Want+A+Result%3F">What If I Want A Result?</h1><pre><code class="prettyprint lang-scala">import akka.actor._
+import akka.util.Timeout
+import akka.util.duration._
+
+val actorSystem = ActorSystem(&quot;actorSystem&quot;)
+case class ReplyActor() extends Actor {
+  def receive = {
+    case int: Int =&gt; {
+      Thread.sleep(200)
+      sender ! &quot;Received Int: %s&quot;.format(int)
+    }
+    case _ =&gt; sender ! &quot;Unknown received.&quot;
+  }
+}
+
+val actorRef = actorSystem.actorOf(Props[ReplyActor], 
+  name = &quot;replyActor&quot;)
+implicit val timeout = Timeout(5 seconds)
+val future = actorRef ? 2000
+println(future.value)    // Should be None.
+Thread.sleep(400)
+println(future.value)    // Should be Some(Right(...))
+actorSystem.shutdown()
+</code></pre><h1 id="Don%E2%80%99t+Block%21">Don’t Block!</h1><pre><code class="prettyprint lang-scala">import akka.actor._
+import akka.util.Timeout
+import akka.util.duration._
+
+val actorSystem = ActorSystem(&quot;actorSystem&quot;)
+case class ReplyActor() extends Actor {
+  def receive = {
+    case int: Int =&gt; {
+      Thread.sleep(200)
+      sender ! &quot;Received Int: %s&quot;.format(int)
+    }
+    case _ =&gt; sender ! &quot;Unknown received.&quot;
+  }
+}
+
+val actorRef = actorSystem.actorOf(Props[ReplyActor], 
+  name = &quot;replyActor&quot;)
+implicit val timeout = Timeout(5 seconds)
+val future = actorRef ? 2000
+future.onComplete{
+  case Right(result) =&gt; println(result)
+  case _ =&gt; println(&quot;Uh oh!&quot;)
+}
+actorSystem.shutdown()
+</code></pre><h1 id="Where+Would+I+Use+Actors%3F">Where Would I Use Actors?</h1><p>If you want to avoid manually controlling synchronisation around some piece of state, it’s possible to use the actor to hold the state and manage that for you.
+<br />
+<br />
+It’s possible to create and start hundreds of thousands, if not millions of actors on one machine, while not processing messages they don’t consume any CPU time.
+</p><h1 id="SBT">SBT</h1><p>In which we discuss <a  href="https://github.com/harrah/xsbt">Simple Build Tool</a>.
+</p><h1 id="Getting+SBT+Installed">Getting SBT Installed</h1><ul><li>Download <a  href="https://raw.github.com/paulp/sbt-extras/master/sbt">this</a> Bash script from the <a  href="https://github.com/paulp/sbt-extras">SBT Extras</a> repo.
+</li><li>Place that script on your PATH or in the root of your project and run it from the root of your project.
+</li><li>Make the magic happen.
+</li></ul><h1 id="SBT+Basics">SBT Basics</h1><p>SBT is run similarly to <a  href="http://ant.apache.org/">Ant</a> or <a  href="http://maven.apache.org/">Maven</a> via a series of commands that you add on the end of the command line:
+</p><pre><code class="">$ sbt clean
+[info] Loading global plugins from /Users/Sean/.sbt/plugins
+[info] Set current project to default-66315d (in build file:/Users/Sean/test/)
+[success] Total time: 0 s, completed Feb 15, 2012 12:24:21 PM
+</code></pre><p>SBT also supports being run interactively if no commands are specified:
+</p><pre><code class="">$ sbt
+[info] Loading global plugins from /Users/Sean/.sbt/plugins
+[info] Set current project to default-66315d (in build file:/Users/Sean/test/)
+&gt; clean
+[success] Total time: 0 s, completed Feb 15, 2012 12:25:07 PM
+&gt;
+</code></pre>
+          </div>
+        </div>
+        
+      </body>
+    </html>
