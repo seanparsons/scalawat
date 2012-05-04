@@ -49,6 +49,8 @@ val scores = List(100, 200, 300)
 scores.foldLeft(0)((runningScore, score) =&gt; runningScore + score)
 // For those comfortable with the syntax:
 scores.foldLeft(0)(_ + _)
+// Don't use this:
+(0 /: scores)(_ + _)
 </code></pre><div class="tocwrapper collap">
       <a class="tochead nav" style="display: none" href="#toc">❦</a>
       <a name="toc"></a>

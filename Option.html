@@ -40,9 +40,13 @@
 </p><pre><code class="prettyprint lang-scala">val potentialValue1: Option[String] = None
 val potentialValue2: Option[String] = Some(&quot;Potential!&quot;)
 println(potentialValue1)
+// None
 println(potentialValue2)
+// Some(Potential!)
 println(potentialValue1.getOrElse(&quot;No Potential!&quot;))
+// No Potential!
 println(potentialValue2.getOrElse(&quot;No Potential!&quot;))
+// Potential!
 </code></pre><pre><code class="prettyprint lang-scala">def lookupUser(id: Int): Option[String] = {
   if (id == 1) Some(&quot;Sean&quot;) else None
 }
