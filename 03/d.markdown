@@ -8,6 +8,7 @@ def printLater(was: Long, now: => Long): Unit = {
 }
 
 printLater(System.currentTimeMillis, System.currentTimeMillis)
+// Was: 1336129701612 Now: 1336129701714
 ```
 
 The now expression is executed at the point when it's used inside the method, not when it's passed into the method.

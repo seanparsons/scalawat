@@ -16,4 +16,5 @@ val scoreText = for {
   score <- lookupScore(player)
 } yield "%s scored %s.".format(player.name, score)
 println(scoreText)
+// None
 ```

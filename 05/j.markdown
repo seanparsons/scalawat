@@ -19,4 +19,6 @@ val scores = List(100, 200, 300)
 scores.foldLeft(0)((runningScore, score) => runningScore + score)
 // For those comfortable with the syntax:
 scores.foldLeft(0)(_ + _)
+// Don't use this:
+(0 /: scores)(_ + _)
 ```

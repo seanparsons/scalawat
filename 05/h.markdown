@@ -14,4 +14,4 @@ if (player != null) {
 return null;
 ```
 
-Lots of boilerplate, easy to get a condition wrong, have to explicitly return (in this case the code is Java).
+Lots of boilerplate, easy to get a condition wrong, have to explicitly return (in this case the code is Java). Bear in mind the man who gave us null calls it his [Billion Dollar Mistake](http://www.infoq.com/presentations/Null-References-The-Billion-Dollar-Mistake-Tony-Hoare).

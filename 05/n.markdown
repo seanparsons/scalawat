@@ -14,4 +14,5 @@ val scoreText = for {
   score <- lookupScore(player)
 } yield "%s scored %s.".format(player.name, score)
 println(scoreText)
+// Some(Sean scored 1000000.)
 ```

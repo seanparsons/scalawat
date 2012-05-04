@@ -1,7 +1,7 @@
 Generic Constraints
 ===================
 
-Generic types can be constrained, the real term for this is type bounds.
+Generic types can have type bounds, which place certain constraints on what types can be used.
 
 ```scala
 import java.io._

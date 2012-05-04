@@ -10,9 +10,7 @@ println(list.head)
 println(list.tail)
 ```
 
-The stock List implementation is a cons-list: 
-![Cons list](http://i.imgur.com/v2CZj.png)
-Each part of the list consists of an element and another list.
+The stock List implementation is a [cons](http://en.wikipedia.org/wiki/Cons)-list, each part of the list consists of an element(head) and another list(tail).
 
 ```scala
 // Alternatively:

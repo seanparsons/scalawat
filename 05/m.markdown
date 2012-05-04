@@ -8,4 +8,5 @@ val results = for {
   number <- List(10, 20, 30)
 } yield number * 2
 println(results)
+// List(20, 40, 60)
 ```

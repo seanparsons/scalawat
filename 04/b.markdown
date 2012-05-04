@@ -1,7 +1,7 @@
 Traits
 ======
 
-Traits are much like interfaces in Java and many other languages, with the exception that they can also include code and not just definitions.
+Traits can be used like interfaces in Java, with the exception that they can also include code, values and variables as well.
 
 ```scala
 trait Logging {

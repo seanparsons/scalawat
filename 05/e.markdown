@@ -7,9 +7,13 @@ An Option contains either zero or 1 items, represented by the None and Some type
 val potentialValue1: Option[String] = None
 val potentialValue2: Option[String] = Some("Potential!")
 println(potentialValue1)
+// None
 println(potentialValue2)
+// Some(Potential!)
 println(potentialValue1.getOrElse("No Potential!"))
+// No Potential!
 println(potentialValue2.getOrElse("No Potential!"))
+// Potential!
 ```
 
 ```scala
