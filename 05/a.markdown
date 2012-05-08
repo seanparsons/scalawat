@@ -15,4 +15,6 @@ The stock List implementation is a [cons](http://en.wikipedia.org/wiki/Cons)-lis
 ```scala
 // Alternatively:
 val list = 5 :: 6 :: 1 :: Nil
+// To show the structure.
+val list = (5 :: (6 :: (1 :: Nil)))
 ```
