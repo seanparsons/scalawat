@@ -7,7 +7,7 @@ An underscore in scala is used in multiple places, usually to specify the defaul
 // Wildcard import.
 import java.io._
 // Default value for a given type.
-val number: Int = _
+var number: Int = _
 // Function currying.
 def multiplier(i: Int)(factor: Int) = i * factor
 val byFive = multiplier(5)_
