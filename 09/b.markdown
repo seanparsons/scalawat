@@ -5,6 +5,7 @@ What If I Want A Result?
 import akka.actor._
 import akka.util.Timeout
 import akka.util.duration._
+import akka.pattern._
 
 val actorSystem = ActorSystem("actorSystem")
 case class ReplyActor() extends Actor {
