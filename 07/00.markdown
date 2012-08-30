@@ -1,4 +1,4 @@
-Implicits
-=========
+Typeclasses
+===========
 
-In which we explore implicits...Explicitly.
+Types of classes?

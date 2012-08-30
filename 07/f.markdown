@@ -1,14 +1,14 @@
-That Typeclass Is Just Adding
-=============================
-
-Now you might look at those previous examples and thought "The methods :::, ++, + and flatMap do that too."
-<br />
-<br />
-Lets take the example of a game with an inventory system, there are a bunch of item IDs and counts for each of those stored in a Map.
+Stock Typeclasses: Functor
+==========================
 
 ```scala
-val currentInventory = Map(1 -> 2, 8 -> 9, 65 -> 3, 100 -> 1)
-val updatedInventory = currentInventory |+| Map(1 -> 4, 9 -> 3)
-println(updatedInventory)  
-// Map(1 -> 6, 65 -> 3, 9 -> 3, 8 -> 9, 100 -> 1)
+trait Functor[F[_]] { self =>
+  def map[A, B](fa: F[A])(f: A => B): F[B]
+}
+```
+
+We know this as the map method that is seen on Seq/Scala/String
+
+```scala
+Functor[List].map(List(1, 2, 3))(number => number * 2)
 ```

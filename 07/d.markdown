@@ -1,24 +1,14 @@
-Make Me A Typeclass
-===================
+What's that doing?
+==================
 
 ```scala
-case class Score(offline: Int, online: Int)
-trait Equal[T] {
-  def equalByType(first: T, second: T): Boolean
-}
-case class MaybeEqual[T](value: T) {
-  def equalByType(other: T)(implicit equal: Equal[T]) = {
-    equal.equalByType(value, other)
-  }
-}
-implicit val scoreEqual = new Equal[Score] {
-  def equalByType(first: Score, second: Score): Boolean = {
-    first == second
-  }
-}
-implicit def scoreMaybeEqual(score: Score) = MaybeEqual(score)
+import MyComparators._
+println(1.mycompare(2))
+// Compile error:
+// println("Cake".mycompare("Elephant"))
 
-println(new Score(100, 200) equalByType new Score(100, 200))
-println(new Score(100, 200) equalByType new Score(100, 999999))
-// println(new Score(100, 200) equalByType 200)
+// The above is the same as doing this:
+new ValueWrapper(1).mycompare(2)
+// Or what the compiler is doing:
+new ValueWrapper(1).mycompare(2)(intComp)
 ```

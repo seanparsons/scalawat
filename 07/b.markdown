@@ -1,22 +1,18 @@
-Implicit Parameters
-===================
+Is that really a typeclass?
+===========================
 
-Parameter groups can be marked as implicit so that implicit fields can be passed in automatically by the compiler.
+Kinda, real typeclasses come from Haskell which has no inheritance of types.
 
-```scala
-trait Serializer[T] { 
-  def serialize(target: T): Array[Byte]
-}
-def store[T](target: T)(implicit serializer: Serializer[T]) {
-  val bytes = serializer.serialize(target)
-  println(bytes.size) // Not a real implementation.
-}
-implicit val stringSerializer = new Serializer[String] {
-  def serialize(target: String) = target.getBytes
-}
-store("Test text.")
-// Will not compile:
-// store(1)
-// Can also do:
-store("Test text.")(stringSerializer)
+```haskell
+-- Typeclass definition.
+class MyComparator a where
+    mycompare :: a -> a -> Integer
+
+-- Typeclass instance.
+instance MyComparator Integer where  
+    mycompare first second = first - second
+
+1 `mycompare` 2
 ```
+
+The instance of the typeclass just needs to be in scope, no need to "new up" an instance.

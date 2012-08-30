@@ -1,16 +1,20 @@
-Implicit Conversions
+What is a typeclass?
 ====================
 
-Implicit conversions allow you to specify one type but pass a different one.
+If you've used Java a reasonable amount there's a prime candidate of how we do things with inheritance:
 
-```scala
-case class Player(name: String)
-case class NamedEntity(name: String)
-implicit def playerToNamedEntity(player: Player): NamedEntity = {
-  new NamedEntity(player.name)
+```java
+public interface Comparable<T> {
+    public int compareTo(T o);
 }
-def printName(namedEntity: NamedEntity) {
-  println("Name: " + namedEntity.name)
-} 
-printName(new Player("Sean"))
 ```
+
+Later on in Java we got this as an alternative:
+
+```java
+public interface Comparator<T> {
+    int compare(T o1, T o2);
+}
+```
+
+The above is probably the closest Java has to typeclasses.
